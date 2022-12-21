@@ -6,7 +6,7 @@ const feedbackForm = document.querySelector('.feedback-form');
 const feedbackFormInput = document.querySelector('.feedback-form input');
 const feedbackFormTextarea = document.querySelector('.feedback-form textarea');
 
-const feedbackFormData = {};
+let feedbackFormData = {};
 
 feedbackForm.addEventListener('submit', onFormSubmit);
 feedbackForm.addEventListener('input', throttle(onUserInput, 500));
